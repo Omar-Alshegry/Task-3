@@ -1,0 +1,137 @@
+.CardOurTeamMembers{
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .topCArdOurTeamMember{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .leftTopOurTeamMember{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .boxImgMember{
+                width: 100px;
+                height: 100px;
+                border-radius: 12px;
+                border: 2px solid #262626;
+                background-color: #FFF5F0;
+                display: flex;
+                justify-content: center;
+                .imgOurTeamMember{
+                    width: 100%;
+                }
+            }
+            .usernameCardOurTeamMember{
+                font-family: "Raleway", sans-serif;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 150%;
+                color: #333333;
+            }
+        }
+        .rightTopOurTeamMember{
+            width: 56px;
+            height: 56px;
+            border-radius: 8px;
+            border: 2px solid #262626;
+            background-color: #FFDECC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .bottomCArdOurTeamMember{
+        padding: 30px;
+        border-radius: 12px;
+        border: 2px solid #262626;
+        background-color: #FFF5F0;
+        .titlemember{
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 150%;
+            color: #333333;
+        }
+        .descMember{
+            max-width: 613px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            color: #333333;
+        }
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .CardOurTeamMembers{
+        padding: 40px;
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+        gap: 24px;
+        .topCArdOurTeamMember{
+            .leftTopOurTeamMember{
+                gap: 12px;
+                .boxImgMember{
+                    width: 80px;
+                    height: 80px;
+                }
+                .usernameCardOurTeamMember{
+                    font-size: 24px;
+                }
+            }
+            .rightTopOurTeamMember{
+                width: 48px;
+                height: 48px;
+                border-radius: 6px;
+                .iconCardMember{
+                    width: 20px;
+                }
+            }
+        }
+        .bottomCArdOurTeamMember{
+            padding: 24px;
+            .titlemember{
+                margin-bottom: 16px;
+                font-size: 20px;
+            }
+            .descMember{
+                max-width: 492px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .CardOurTeamMembers{
+        padding: 30px;
+        .topCArdOurTeamMember{
+            .leftTopOurTeamMember{
+                gap: 10px;
+                .boxImgMember{
+                    width: 60px;
+                    height: 60px;
+                }
+                .usernameCardOurTeamMember{
+                    font-size: 20px;
+                }
+            }
+        }
+        .bottomCArdOurTeamMember{
+            padding: 20px;
+            .titlemember{
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 576px) {
+    .CardOurTeamMembers{
+        width: 276px;
+        padding: 15px;
+    }
+}

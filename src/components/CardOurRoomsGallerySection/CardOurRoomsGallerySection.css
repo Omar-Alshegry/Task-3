@@ -1,0 +1,140 @@
+.CardOurRoomsGallerySection{
+    padding: 120px 50px 50px 50px;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    background-color: #fff;
+    position: relative;
+    .groupImgGallery{
+        display: flex;
+        gap: 40px;
+        position: absolute;
+        top : -180px;
+        z-index: 2;
+        overflow: hidden;
+        .imgCardGallery{
+            flex: 0 0 calc((100% - 160px) / 4) ;
+            max-width: calc((100% - 160px) / 4) ;
+            height: 304px;
+            transition: all 0.4s;
+            border: 2px solid #262626;
+            border-radius: 12px;
+        }
+    }
+    .boxTitleArrowsCardGallery{
+        margin-bottom: 40px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .titleCardGallery{
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 130%;
+            color: #1A1A1A;
+        }
+        .ArrowSliderGallery{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .boxLeftArrowGallery , .boxRightArrowGallery{
+                width: 58px;
+                height: 58px;
+                border: 2px solid #333333;
+                border-radius: 8px;
+                background-color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                flex-shrink: 0;
+            }
+        }
+    }
+    .descCardGallery{
+        max-width: 1496px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 150%;
+        color: #4C4C4D;
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .CardOurRoomsGallerySection{
+        padding: 100px 40px 40px 40px;
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+        .groupImgGallery{
+            top : -140px;
+            .imgCardGallery{
+                flex: 0 0 calc((100% - 160px) / 4) ;
+                max-width: calc((100% - 160px) / 4) ;
+                height: 234px;
+            }
+        }
+        .boxTitleArrowsCardGallery{
+            margin-bottom: 30px;
+            margin-top: 20px;
+            .titleCardGallery{
+                font-size: 34px;
+            }
+            .ArrowSliderGallery{
+                gap: 16px;
+                .boxLeftArrowGallery , .boxRightArrowGallery{
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+        .descCardGallery{
+            max-width: 1200px;
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .CardOurRoomsGallerySection{
+        padding: 70px 30px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .groupImgGallery{
+            top : -140px;
+            width: 50%;
+            .imgCardGallery{
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .boxTitleArrowsCardGallery{
+            margin-bottom: 20px;
+            margin-top: 34px;
+            flex-direction: column-reverse;
+            .titleCardGallery{
+                font-size: 28px;
+            }
+        }
+        .descCardGallery{
+            max-width: 1200px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width : 768px) {
+    .CardOurRoomsGallerySection{
+        .groupImgGallery{
+            top : -140px;
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width : 576px) {
+    .CardOurRoomsGallerySection{
+        .groupImgGallery{
+            top : -140px;
+            width: 90%;
+        }
+    }
+}

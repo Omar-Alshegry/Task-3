@@ -1,0 +1,112 @@
+.OurAwardsandRecognitionsSection{
+    margin-bottom: 200px;
+    .groupAllSliderAward{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .boxSliderAward{
+            width: 100%;
+            overflow: hidden;
+            flex: 1;
+            min-width: 0;
+            .containerSliderAward{
+                display: flex;
+                gap: 50px;
+                .cardAward{
+                    margin-top: 40px;
+                    margin-bottom: 8px;
+                    flex: 0 0 calc((100% - 112px) / 3) !important;
+                    max-width: calc((100% - 112px) / 3) !important;
+                    height: auto;
+                    transition: all 0.4s;
+                }
+            }
+        }
+        
+        .bottomSliderAward{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .countAwards{
+                font-family: "Raleway", sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 130%;
+                color: #1A1A1A;
+            }
+            .ArrowSliderAward{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .boxLeftArrow , .boxRightArrow{
+                    width: 58px;
+                    height: 58px;
+                    border: 2px solid #333333;
+                    border-radius: 8px;
+                    background-color: #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 1440px) {
+    .OurAwardsandRecognitionsSection{
+        margin-bottom: 150px;
+        .groupAllSliderAward{
+            /* height: 450px; */
+            gap: 40px;
+            .boxSliderAward{
+                .containerSliderAward{
+                    gap: 30px;
+                    .cardAward{
+                        flex: 0 0 calc((100% - 89px) / 3) !important;
+                        max-width: calc((100% - 89px) / 3) !important;
+                        /* height: 350px !important; */
+                    }
+                }
+            }
+            .bottomSliderAward{
+                .countAwards{
+                    font-size: 18px;
+                }
+                .ArrowSliderAward{
+                    gap: 16px;
+                    .boxLeftArrow , .boxRightArrow{
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .OurAwardsandRecognitionsSection{
+        margin-bottom: 80px;
+        .groupAllSliderAward{
+            margin: 0 auto;
+            width: 60%;
+            gap: 30px;
+            .boxSliderAward{
+                .containerSliderAward{
+                    .cardAward{
+                        flex: 0 0 100% !important;
+                        max-width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 768px) {
+    .OurAwardsandRecognitionsSection{
+        .groupAllSliderAward{
+            width: 80%;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.OurTestimonials{
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .groupAllSlider{
+        max-width: 100%;   
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        .boxSlider{
+            overflow: hidden;
+            flex: 1;
+            min-width: 0;
+            .containerTestimonials{
+                display: flex;
+                align-items: center;
+                gap: 50px;
+            }
+        }
+        .boxLeftArrow , .boxRightArrow{
+            width: 58px;
+            height: 58px;
+            border: 2px solid #333333;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .OurTestimonials{
+        margin-bottom: 150px;
+        .groupAllSlider{
+            gap: 24px;
+            .boxLeftArrow , .boxRightArrow{
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .OurTestimonials{
+        margin-bottom: 80px;
+        .groupAllSlider{
+            max-width: 60%; 
+        }
+    }
+}
+@media screen and (max-width : 768px) {
+    .OurTestimonials{
+        .groupAllSlider{
+            max-width: 80%; 
+        }
+    }
+}
+@media screen and (max-width : 576px) {
+    .OurTestimonials{
+        .groupAllSlider{
+            max-width: 100%; 
+            gap: 8px;
+            .boxLeftArrow , .boxRightArrow{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

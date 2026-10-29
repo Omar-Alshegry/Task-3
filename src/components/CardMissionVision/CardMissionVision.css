@@ -1,0 +1,81 @@
+.cardMissionVision{
+    flex-basis: 50%;
+    height: 410px;
+    padding: 60px;
+    background-color: #FFFFFF;
+    border: 2px solid #262626;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .topMision{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .titlecardMissionVision{
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 130%;
+            color: #1A1A1A;
+        }
+    }
+    .desccardMissionVision{
+        max-width: 648px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: #333333;
+    }
+}
+@media screen and (max-width : 1650px) {
+    .cardMissionVision{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .cardMissionVision{
+        height: 330px;
+        padding: 50px;
+        box-shadow: 4px 4px 0px 2px #1E1E1E;
+        gap: 50px;
+        .topMision{
+            .titlecardMissionVision{
+                font-size: 38px;
+            }
+            .iconMisionCard{
+                width: 60px;
+            }
+        }
+        .desccardMissionVision{
+            max-width: 520px;
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width :1260px) {
+    .cardMissionVision{
+        height: 400px;
+    }
+}
+@media screen and (max-width : 992px) {
+    .cardMissionVision{
+        height: 386px;
+        padding: 40px;
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+        gap: 40px;
+        .topMision{
+            .titlecardMissionVision{
+                font-size: 30px;
+            }
+            .iconMisionCard{
+                width: 50px;
+            }
+        }
+        .desccardMissionVision{
+            max-width: 278px;
+        }
+    }
+}

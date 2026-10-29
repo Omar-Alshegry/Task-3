@@ -1,0 +1,305 @@
+.containerFooter{
+    padding: 0 50px 50px 50px;
+    .footer{
+        width: 100%;
+        padding: 100px 113px 40px 113px;
+        background-color: #FFFFFF;
+        border: 2px solid #262626;
+        border-radius: 12px;
+        box-shadow: 6px 6px 0px 2px #1E1E1E;
+        display: flex;
+        flex-direction: column;
+        .linksFooterContainer{
+            margin-bottom: 50px;
+            display: flex;
+            gap: 80px;
+            .leftFooter{
+                display: flex;
+                flex-direction: column;
+                .descFooter{
+                    max-width: 519px;
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #4C4C4D;
+                }
+                .contactFooter{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    .contact{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        .boxIconFooter{
+                            width: 40px;
+                            height: 40px;
+                            border: 2px solid #262626;
+                            border-radius: 6px;
+                            background-color: #FFF5F0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            svg{
+                                font-size: 24px;
+                            }
+                        }
+                        .descIconFooter{
+                            font-weight: 500;
+                            font-size: 20px;
+                            color: #262626;
+                        }
+                    }
+                }
+            }
+            .boxLinksFooter{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+                .ulFooter{
+                    max-width: 227px;
+                    width: 200px;
+                    list-style: none;
+                    li{
+                        margin-bottom: 14px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 150%;
+                    }
+                    .boldLi{
+                        margin-bottom: 24px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .lineFooter{
+            height: 2px;
+            width: 100%;
+            margin-bottom: 30px;
+            background-color: #262626;
+        }
+        .termsFooter{
+            width: 100%;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .leftTermsFooter{
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                .wordTermsFooter{
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #333333;
+                }
+                .word2{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 2px;
+                        background-color: #262626;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -16px;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 2px;
+                        background-color: #262626;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -16px;
+                    }
+                }
+            }
+            .rightTermsFooter{
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                .boxIconSocialMediaFooter{
+                    width: 56px;
+                    height: 56px;
+                    border: 2px solid #262626;
+                    border-radius: 8px;
+                    background-color: #FFDECC;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .copyRight{
+            width: 100%;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .containerFooter{
+        .footer{
+            padding: 80px 80px 40px 80px;
+            .linksFooterContainer{
+                margin-bottom: 40px;
+                gap: 60px;
+                .leftFooter{
+                    .descFooter{
+                        max-width: 393px;
+                        margin-top: 16px;
+                        margin-bottom: 40px;
+                        font-size: 16px;
+                    }
+                    .contactFooter{
+                        gap: 20px;
+                        .contact{
+                            gap: 8px;
+                            .boxIconFooter{
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 4px;
+                                svg{
+                                    font-size: 20px;
+                                }
+                            }
+                            .descIconFooter{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .boxLinksFooter{
+                    gap: 20px;
+                    .ulFooter{
+                        max-width: 161px;
+                        width: 100px;
+                        li{
+                            font-size: 16px;
+                        }
+                        .boldLi{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            .lineFooter{
+                margin-bottom: 20px;
+            }
+            .termsFooter{
+                margin-bottom: 20px;
+                .leftTermsFooter{
+                    gap: 20px;
+                    .wordTermsFooter{
+                        font-size: 16px;
+                    }
+                    .word2{
+                        position: relative;
+                        &::before{
+                            left: -10px;
+                        }
+                        &::after{
+                            right: -10px;
+                        }
+                    }
+                }
+                .rightTermsFooter{
+                    .boxIconSocialMediaFooter{
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 6px;
+                        svg{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .copyRight{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .containerFooter{
+        padding: 0 16px 20px 16px;
+        .footer{
+            padding: 30px 60px;
+            box-shadow: 6px 6px 0px 1px #1E1E1E;
+            .linksFooterContainer{
+                flex-direction: column;
+                margin-bottom: 30px;
+                gap: 40px;
+                .leftFooter{
+                    align-items: center;
+                    .imgFooter{
+                        width: 182px;
+                    }
+                    .descFooter{
+                        text-align: center;
+                    }
+                    .contactFooter{
+                        align-self: flex-start;
+                    }
+                }
+            }
+            .boxLinksFooter{
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .ulFooter{
+                    max-width: 134px !important;
+                    width: 90px !important;
+                }
+            }
+            .lineFooter{
+                margin-bottom: 16px;
+            }
+            .termsFooter{
+                margin-bottom: 16px;
+                flex-direction: column;
+                gap: 20px;
+                .leftTermsFooter{
+                    gap: 12px;
+                    .word2{
+                        &::before{
+                            left: -6px;
+                        }
+                        &::after{
+                            right: -6px;
+                        }
+                    }
+                }
+                .rightTermsFooter{
+                    .boxIconSocialMediaFooter{
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+            }
+            .copyRight{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 576px) {
+    .containerFooter{
+        .footer{
+            padding: 16px 16px;
+        }
+    }
+}

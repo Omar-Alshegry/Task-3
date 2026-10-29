@@ -1,0 +1,41 @@
+.FAQ{
+    margin-bottom: 200px;
+    .containerFAQ{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        .sec1 , .sec2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width : 1440px) {
+    .FAQ{
+        margin-bottom: 150px;
+        .containerFAQ{
+            gap: 40px;
+            .sec2 , .sec1 {
+                gap: 24px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .FAQ{
+        margin-bottom: 80px;
+        .containerFAQ{
+            flex-direction: column;
+            .sec2 , .sec1 {
+                width: 100%;
+                gap: 20px;
+            }
+        }
+    }
+}

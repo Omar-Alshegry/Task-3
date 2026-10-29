@@ -1,0 +1,28 @@
+.OurMissionVisionsSection{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    .containerMision{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+}
+@media screen and (max-width : 1440px) {
+    .OurMissionVisionsSection{
+        margin-bottom: 150px;
+        margin-top: 150px;
+        .containerMision{
+            gap: 60px;
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .OurMissionVisionsSection{
+        margin-bottom: 80px;
+        margin-top: 80px;
+        .containerMision{
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}

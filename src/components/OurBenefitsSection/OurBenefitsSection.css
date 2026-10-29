@@ -1,0 +1,30 @@
+.OurBenefits{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    .containerBenefits{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        row-gap: 60px;
+        flex-wrap: wrap;
+    
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .OurBenefits{
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .OurBenefits{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        .containerBenefits{
+            justify-content: center;
+        }
+    }
+}

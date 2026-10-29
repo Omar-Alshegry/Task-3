@@ -1,0 +1,72 @@
+.OurRoomsGallerySection{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    .containerGallery{
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .boxBtnGallery{
+            margin-bottom: 240px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            .btnGallery{
+                padding: 14px 20px;
+                background-color: #fff;
+                border: 2px solid #333333;
+                border-radius: 8px;
+                flex-shrink: 0;
+                cursor: pointer;
+                &:hover{
+                    background-color: #FFEFE5;
+                }
+            }
+        }
+        .boxCardGallery{
+            display: flex;
+            flex-direction: column;
+            gap: 240px;
+        }
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .OurRoomsGallerySection{
+        margin-top: 150px;
+        margin-bottom: 150px;
+        .containerGallery{
+            margin-top: 80px;
+            .boxBtnGallery{
+                margin-bottom: 200px;
+                display: flex;
+                gap: 10px;
+                .btnGallery{
+                    padding: 10px 16px;
+                    border-radius: 6px;
+                }
+            }
+            .boxCardGallery{
+                gap: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .OurRoomsGallerySection{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        .containerGallery{
+            margin-top: 50px;
+            .boxBtnGallery{
+                margin-bottom: 180px;
+                overflow: scroll;
+                justify-content: start;
+            }
+            .boxCardGallery{
+                gap: 180px;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.WhatStudentsLearnSection{
+    margin-top: 200px;
+    .containerWhatStudentsLearnSection{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        row-gap: 60px;
+        flex-wrap: wrap;
+    
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .WhatStudentsLearnSection{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .WhatStudentsLearnSection{
+        margin-top: 80px;
+        .containerWhatStudentsLearnSection{
+            justify-content: center;
+        }
+    }
+}

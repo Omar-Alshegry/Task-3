@@ -1,0 +1,81 @@
+.cardFAQ{
+    width: 100%;
+    padding: 34px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    background-color: #FFEFE5;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    .boxFAQCard{
+        max-width: 621px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .question{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 150%;
+            color: #262626;
+        }
+        .lineFAQ{
+            width: 100%;
+            height: 2px;
+            background-color: #262626;
+        }
+        .answer{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            color: #333333;
+        }
+    }
+    .boxIconCArdFAQ{
+        width: 40px;
+        height: 40px;
+        border: 2px solid #262626;
+        border-radius: 6px;
+        background-color: #FFF5F0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+}
+.bg-white{
+    background-color: #FFFFFF;
+}
+.d-none{
+    display: none;
+}
+
+@media screen and (max-width : 1440px) {
+    .cardFAQ{
+        padding: 26px 30px;
+        .boxFAQCard{
+            max-width: 504px;
+            gap: 20px;
+            .question{
+                font-size: 18px;
+            }
+            .answer{
+                font-size: 16px;
+            }
+        }
+        .boxIconCArdFAQ{
+            width: 32px;
+            height: 32px;
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width : 992px) {
+    .cardFAQ{
+        padding: 20px 24px;
+        .boxFAQCard{
+            gap: 24px;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.heroPages{
+    padding-top: 230px;
+    padding-left: 50px;
+    padding-right: 50px;
+    .containerHeroPages{
+        padding: 150px 120px;
+        background-color: #fff;
+        border: 2px solid #262626;
+        box-shadow: 8px 8px 0px 1px #1E1E1E;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        .imgHeroPages{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .leftHeroPages{
+            /* max-width: 765px; */
+            flex-basis: 50%;
+            .btnHeroPages{
+                margin-bottom: 14px;
+                padding: 10px 20px;
+                background-color: #ffffff;
+                border: 2px solid #000000;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                color: #333333;
+                cursor: pointer;
+            }
+            .titleHeroPages{
+                font-family: "Raleway", sans-serif;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 130%;
+                text-align: center;
+                color: #1A1A1A;
+                text-align: start;
+            }
+        }
+        .rightHeroPages{
+            /* max-width: 765px; */
+            flex-basis: 50%;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            text-align: center;
+            color: #333333;
+            text-align: start;
+        }
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .heroPages{
+        padding-top: 184px;
+        padding-left: 80px;
+        padding-right: 80px;
+        .containerHeroPages{
+            padding: 100px 80px;
+            box-shadow: 8px 8px 0px 1px #1E1E1E;
+            .imgHeroPages{
+                width: 137px;
+            }
+            .leftHeroPages{
+                .btnHeroPages{
+                    margin-bottom: 10px;
+                    padding: 8px 14px;
+                    font-size: 16px;
+                }
+                .titleHeroPages{
+                    font-size: 38px;
+                }
+            }
+            .rightHeroPages{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .heroPages{
+        padding-top: 200px;
+        padding-left: 16px;
+        padding-right: 16px;
+        .containerHeroPages{
+            padding: 50px 30px;
+            flex-direction: column;
+            box-shadow: 8px 8px 0px 1px #1E1E1E;
+            .imgHeroPages{
+                width: 100px;
+            }
+            .leftHeroPages{
+                text-align: center;
+                .btnHeroPages{
+                    font-size: 14px;
+                }
+                .titleHeroPages{
+                    text-align: center;
+                font-size: 28px;
+                }
+            }
+            /* .rightHeroPages{
+                font-size: 16px;
+            } */
+        }
+    }
+}
